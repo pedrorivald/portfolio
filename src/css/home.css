@@ -1,0 +1,94 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home .menu {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+}
+
+.home .menu button {
+  outline: none;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--color-green);
+}
+
+.home .menu button i {
+  background: transparent;
+}
+
+.home .menu button:hover {
+  animation: menu 0.5s infinite linear;
+  color: var(--color-magenta);
+}
+
+@keyframes menu {
+  0% {
+    transform: translateX(0px)
+  }
+  25% {
+    transform: translateX(-5px)
+  }
+  50% {
+    transform: translateX(0px)
+  }
+  75% {
+    transform: translateX(5px)
+  }
+  100% {
+    transform: translateX(0px)
+  }
+}
+
+.home .name {
+  padding-bottom: 50px;
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--color-lightWhite);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.home .name .tag-symbol {
+  color: var(--color-lightGreen);
+}
+
+.home .start button {
+  outline: none;
+  border: none;
+  padding: 15px 40px 15px 40px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  color: var(--color-lightWhite);
+  background: var(--background-color);
+  border: 5px solid var(--color-green);
+}
+
+.home .start button:hover {
+  background-color: var(--color-green);
+  box-shadow: 0 0 50px var(--color-green);
+  color: var(--background-color);
+}
+
+.home .start button:hover .fa-google-play{
+  color: var(--color-magenta);
+}
+
+.home .start button .fa-google-play{
+  font-size: 1.1rem;
+}
