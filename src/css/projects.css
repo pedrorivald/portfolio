@@ -1,0 +1,146 @@
+.projects {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects .bar {
+  height: 60px;
+}
+
+.projects .divider {
+  background-color: var(--color-green);
+  height: 2px;
+  width: 30%;
+}
+
+.projects .title {
+  padding: 15px 40px 15px 40px;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: 3px solid var(--color-green);
+  color: var(--color-lightWhite);
+  font-weight: bold;
+}
+
+.projects .project {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+}
+
+.article .link {
+  position: absolute;
+  align-self: flex-end;
+}
+
+.article .link a {
+  text-decoration: none;
+  color: var(--color-magenta);
+}
+
+.article .link a:hover {
+  text-decoration: none;
+  color: var(--color-green);
+}
+
+.article .project-name {
+  text-align: left;
+  font-size: 1.5rem;
+  color: var(--color-lightWhite);
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.article {
+  padding: 25px;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  box-shadow: var(--color-black) 0px 3px 8px;
+  transition: .5s;
+}
+
+.pizza .article:hover {
+  box-shadow: var(--color-yellow) 0px 3px 8px;
+}
+
+.textando .article:hover {
+  box-shadow: var(--color-blue) 0px 3px 8px;
+}
+
+.gitdex .article:hover {
+  box-shadow: #183268 0px 3px 8px;
+}
+
+.article .project-name .number {
+  color: var(--color-green);
+}
+
+.article .project-description ul li{
+  list-style: none;
+  color: var(--color-lightWhite);
+  font-weight: bold;
+}
+
+.article .project-description ul li i{
+  color: var(--color-green);
+}
+
+.project .container {
+  position: relative;
+  width: 360px;
+  height: 640px;
+  opacity: 0.8;
+  transform: rotate(-30deg) skew(25deg) scale(.7);
+  transition: 0.5s;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.pizza .container {
+  background: var(--color-yellow);
+  box-shadow: 0 0 40px var(--color-yellow);
+}
+
+.textando .container {
+  background: var(--color-blue);
+  box-shadow: 0 0 40px var(--color-blue);
+}
+
+.gitdex .container {
+  background: #183268;
+  box-shadow: 0 0 40px #183268;
+}
+
+.container img {
+  position: absolute;
+  width: 100%;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+
+.container:hover img:nth-child(3) {
+  transform: translate(60px, -60px);
+  opacity: 1;
+}
+
+.container:hover img:nth-child(2) {
+  transform: translate(40px, -40px);
+  opacity: .75;
+}
+
+.container:hover img:nth-child(1) {
+  transform: translate(20px, -20px);
+  opacity: .5;
+}

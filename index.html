@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfólio</title>
+    <title>&lt;Rivaldo /&gt;</title>
 
     <link
       rel="stylesheet"
@@ -20,26 +20,223 @@
 
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/home.css" />
+    <link rel="stylesheet" href="src/css/overview.css" />
+    <link rel="stylesheet" href="src/css/projects.css" />
   </head>
   <body>
     <div id="particles-js"></div>
 
-    <div class="home">
+    <div class="home" id="home">
       <div class="menu">
-        <button>
-          <i class="fas fa-bars"></i>
-        </button>
+        <ul>
+          <li><i class="fas fa-bars"></i>
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="#home"><i class="fas fa-home"></i> Início</a></li>
+              <li><a href="#overview"><i class="fas fa-user-circle"></i> Rivaldo</a></li>
+              <li><a href="#projects"><i class="fas fa-code"></i> Projetos</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
 
       <div class="name">
         <span>Olá, me chamo</span>
-        <span><span class="tag-symbol">&lt;</span>Rivaldo<span class="tag-symbol">/&gt;</span></span>
+        <span
+          ><span class="tag-symbol">&lt;</span>Pedro Rivaldo<span
+            class="tag-symbol"
+            >/&gt;</span
+          ></span
+        >
       </div>
 
       <div class="start">
-        <button><i class="fab fa-google-play"></i> Start</button>
+        <a href="#overview">
+          <button><i class="fab fa-google-play"></i> Start</button>
+        </a>
+      </div>
+      <div class="bar"></div>
+    </div>
+
+    <div class="overview" id="overview">
+      <div class="bar"></div>
+
+      <div class="title">
+        <span class="white">$</span>
+        <span class="magenta">cat</span>
+        <span class="yellow">Rivaldo.json</span>
+      </div>
+
+      <div class="bar"></div>
+      <div class="divider"></div>
+
+      <div class="rivaldo">
+        <span class="chave-0">{</span>
+        
+        <span class="line">
+          <span class="tab key">"nome"</span><span class="two-point">:</span>
+          <span class="value">"Pedro Rivaldo"</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"estado"</span><span class="two-point">:</span>
+          <span class="value">"Ceará"</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"idade"</span><span class="two-point">:</span>
+          <span class="number">18</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"email"</span><span class="two-point">:</span>
+          <span class="value">"pedrorivaldev@gmail.com"</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"github"</span><span class="two-point">:</span>
+          <span class="value">"https://github.com/pedrorivald"</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"experiências"</span><span class="two-point">:</span>
+          <span class="value">"Estagiário FrontEnd - Inforplus"</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"formação"</span><span class="two-point">:</span>
+          <span class="value">"Técnico em Informática"</span><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"stack"</span><span class="two-point">:</span>
+          <span class="number">[</span>
+          <span class="value">"Angular"</span><span class="comma">,</span>
+          <span class="value">"TypeScript/JavaScript"</span><span class="comma">,</span>
+          <span class="value">"HTML/CSS/SCSS"</span>
+          <span class="number">]</span>
+        </span>
+
+        <span class="chave-1">}</span>
+      </div>
+
+      <div class="divider"></div>
+    </div>
+
+    <div class="projects" id="projects">
+      <div class="bar"></div>
+      <div class="title">$ <span class="magenta">cd</span> Projetos</div>
+
+      <div class="project pizza">
+        <div class="article">
+          <div class="link">
+            <a href="https://pizzadelivery.vercel.app" target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            <a
+              href="https://github.com/pedrorivald/pizzaria-angular"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-name">
+            <span class="number">1.</span>PizzaDelivery 🍕
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i> Aplicação de vendas para
+                pizzarias
+              </li>
+              <li>
+                <i class="fas fa-chevron-right"></i> Angular & Angular Material
+              </li>
+              <li><i class="fas fa-chevron-right"></i> TypeScript</li>
+              <li><i class="fas fa-chevron-right"></i> API WhatsApp</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./src/assets/img/pizza.png" />
+          <img src="./src/assets/img/pizza.png" />
+          <img src="./src/assets/img/pizza.png" />
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="project textando">
+        <div class="container">
+          <img src="./src/assets/img/textando.png" />
+          <img src="./src/assets/img/textando.png" />
+          <img src="./src/assets/img/textando.png" />
+        </div>
+
+        <div class="article">
+          <div class="link">
+            <a href="https://pedrorivald.github.io/textando" target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            <a href="https://github.com/pedrorivald/textando" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-name">
+            <span class="number">2.</span>Textando ✏
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i> Aplicação que transforma
+                textos
+              </li>
+              <li><i class="fas fa-chevron-right"></i> JavaScript</li>
+              <li><i class="fas fa-chevron-right"></i> HTML + CSS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="project gitdex">
+        <div class="article">
+          <div class="link">
+            <a href="https://gitdex.vercel.app" target="_blank"
+              ><i class="fas fa-external-link-alt"></i
+            ></a>
+            <a href="https://github.com/pedrorivald" target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+          <div class="project-name">
+            <span class="number">3.</span>GitDex 👨🏻‍💻
+          </div>
+          <div class="project-description">
+            <ul>
+              <li>
+                <i class="fas fa-chevron-right"></i> Perfil de usuário com dados
+                do GitHub
+              </li>
+              <li><i class="fas fa-chevron-right"></i> Angular</li>
+              <li><i class="fas fa-chevron-right"></i> PWA</li>
+              <li><i class="fas fa-chevron-right"></i> TypeScript</li>
+              <li><i class="fas fa-chevron-right"></i> API GitHub</li>
+              <li><i class="fas fa-chevron-right"></i> Gerador de QRCode</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <img src="./src/assets/img/gitdex.png" />
+          <img src="./src/assets/img/gitdex.png" />
+          <img src="./src/assets/img/gitdex.png" />
+        </div>
       </div>
     </div>
+
+    <!-- <h1>Sou especialista em desenvolvimento web</h1>
+      <h2>Especialista em banco de dados</h2>
+      <h3>Engenheiro de Software</h3>
+      <h4>Formado em Ciência da Computação pela UFRJ</h4> -->
 
     <script src="src/js/particles.js"></script>
     <script src="src/js/app.js"></script>

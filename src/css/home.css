@@ -1,6 +1,6 @@
 .home {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,45 +14,76 @@
   background: transparent;
 }
 
-.home .menu button {
-  outline: none;
-  border: none;
-  background: transparent;
-  font-size: 1.5rem;
-  font-weight: bold;
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  display: block;
+  float: right;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
   cursor: pointer;
+}
+
+.menu li > i {
+  font-size: 1.6rem;
   color: var(--color-green);
 }
 
-.home .menu button i {
-  background: transparent;
-}
-
-.home .menu button:hover {
-  animation: menu 0.5s infinite linear;
+.menu li > i:hover {
   color: var(--color-magenta);
 }
+  
+.menu ul li ul li a {
+  width: 100%;
+  height: 100%;
+  color: var(--color-yellow);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
 
-@keyframes menu {
-  0% {
-    transform: translateX(0px)
-  }
-  25% {
-    transform: translateX(-5px)
-  }
-  50% {
-    transform: translateX(0px)
-  }
-  75% {
-    transform: translateX(5px)
-  }
-  100% {
-    transform: translateX(0px)
-  }
+.menu ul li ul {
+  background-color: var(--background-color);
+  box-shadow: var(--color-black) 0px 3px 8px;
+  border-radius: 15px;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 150px;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  right: 0;
+  display: none;
+}
+.menu ul li ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.menu ul li ul li:hover {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu ul li:hover > ul,
+.menu ul li:focus-within > ul,
+.menu ul li ul:hover,
+.menu ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
 }
 
 .home .name {
-  padding-bottom: 50px;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
   font-size: 3rem;
   font-weight: bold;
   color: var(--color-lightWhite);
@@ -60,6 +91,25 @@
 
   display: flex;
   flex-direction: column;
+
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 3.5s steps(40, end);
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.home .start {
+  margin-top: 5vh;
+  background-color: none;
 }
 
 .home .name .tag-symbol {
@@ -76,19 +126,40 @@
   cursor: pointer;
   color: var(--color-lightWhite);
   background: var(--background-color);
-  border: 5px solid var(--color-green);
+  border: 3px solid var(--color-green);
+  transition: .5s;
 }
 
 .home .start button:hover {
   background-color: var(--color-green);
-  box-shadow: 0 0 50px var(--color-green);
+  box-shadow: 0 0 40px var(--color-green);
   color: var(--background-color);
 }
 
-.home .start button:hover .fa-google-play{
+.home .start button:hover .fa-google-play {
   color: var(--color-magenta);
 }
 
-.home .start button .fa-google-play{
+.home .start button .fa-google-play {
   font-size: 1.1rem;
+}
+
+h1 {
+  color: white;
+  font-size: 20;
+}
+
+h2 {
+  color: white;
+  font-size: 20;
+}
+
+h3 {
+  color: white;
+  font-size: 20;
+}
+
+h4 {
+  color: white;
+  font-size: 20;
 }
