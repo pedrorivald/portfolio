@@ -7,84 +7,9 @@
   align-items: center;
 }
 
-.home .menu {
-  position: fixed;
-  top: 15px;
-  right: 15px;
-  background: transparent;
-}
-
-.menu ul {
-  list-style: none;
-}
-
-.menu li {
-  display: block;
-  float: right;
-  padding: 1rem;
-  position: relative;
-  text-decoration: none;
-  transition-duration: 0.5s;
-  cursor: pointer;
-}
-
-.menu li > i {
-  font-size: 1.6rem;
-  color: var(--color-green);
-}
-
-.menu li > i:hover {
-  color: var(--color-magenta);
-}
-  
-.menu ul li ul li a {
-  width: 100%;
-  height: 100%;
-  color: var(--color-yellow);
-  font-weight: bold;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-decoration: none;
-}
-
-.menu ul li ul {
-  background-color: var(--background-color);
-  box-shadow: var(--color-black) 0px 3px 8px;
-  border-radius: 15px;
-  visibility: hidden;
-  opacity: 0;
-  min-width: 150px;
-  position: absolute;
-  transition: all 0.5s ease;
-  margin-top: 1rem;
-  right: 0;
-  display: none;
-}
-.menu ul li ul li {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.menu ul li ul li:hover {
-  border-radius: 15px;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.menu ul li:hover > ul,
-.menu ul li:focus-within > ul,
-.menu ul li ul:hover,
-.menu ul li ul:focus {
-   visibility: visible;
-   opacity: 1;
-   display: block;
-}
-
 .home .name {
-  padding-top: 25vh;
-  padding-bottom: 25vh;
-  font-size: 3rem;
+  padding-bottom: 8vh;
+  font-size: 3.5rem;
   font-weight: bold;
   color: var(--color-lightWhite);
   text-align: center;
@@ -108,7 +33,6 @@
 }
 
 .home .start {
-  margin-top: 5vh;
   background-color: none;
 }
 
@@ -144,22 +68,35 @@
   font-size: 1.1rem;
 }
 
-h1 {
-  color: white;
-  font-size: 20;
+@media screen and (max-width: 620px) {
+  .home .name {
+    font-size: 2.5rem;
+  }
+
+  .home .start button {
+    padding: 12px 30px 12px 30px;
+    font-size: 1.3rem;
+  }
 }
 
-h2 {
-  color: white;
-  font-size: 20;
+@media screen and (max-width: 420px) {
+  .home .name {
+    font-size: 2rem;
+  }
+
+  .home .start button {
+    padding: 10px 25px 10px 25px;
+    font-size: 1.1rem;
+  }
 }
 
-h3 {
-  color: white;
-  font-size: 20;
-}
+@media screen and (max-width: 360px) {
+  .home .name {
+    font-size: 1.7rem;
+  }
 
-h4 {
-  color: white;
-  font-size: 20;
+  .home .start button {
+    padding: 8px 21px 8px 21px;
+    font-size: 1rem;
+  }
 }

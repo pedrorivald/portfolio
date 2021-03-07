@@ -1,0 +1,74 @@
+.menu {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  z-index: 100;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu li {
+  display: block;
+  float: right;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.menu li > i {
+  font-size: 1.6rem;
+  color: var(--color-green);
+}
+
+.menu li > i:hover {
+  color: var(--color-magenta);
+}
+  
+.menu ul li ul li a {
+  width: 100%;
+  height: 100%;
+  color: var(--color-yellow);
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+}
+
+.menu ul li ul {
+  background-color: var(--background-color);
+  box-shadow: var(--color-black) 0px 3px 8px;
+  border-radius: 15px;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 150px;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  right: 0;
+  display: none;
+}
+.menu ul li ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.menu ul li ul li:hover {
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menu ul li:hover > ul,
+.menu ul li:focus-within > ul,
+.menu ul li ul:hover,
+.menu ul li ul:focus {
+   visibility: visible;
+   opacity: 1;
+   display: block;
+}
