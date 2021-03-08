@@ -13,6 +13,7 @@
 }
 
 .overview .title {
+  width: 350px;
   padding: 15px 40px 15px 40px;
   background-color: var(--background-color);
   border-radius: 20px;
@@ -69,54 +70,58 @@
   color: rgb(62, 187, 209);
 }
 
-.divider-overview{
+.divider-overview {
   background-color: var(--color-green);
   height: 3px;
   width: 100px;
 }
 
 @media screen and (max-width: 820px) {
-  .rivaldo span{
+  .rivaldo span {
     font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 720px) {
-  .rivaldo span{
+  .rivaldo span {
     font-size: 1rem;
   }
 
   .overview .title {
     font-size: 1.3rem;
+    width: 315px;
   }
 }
 
 @media screen and (max-width: 620px) {
-  .rivaldo span{
+  .rivaldo span {
     font-size: 0.9rem;
   }
 
   .overview .title {
     font-size: 1.1rem;
+    width: 280px;
   }
 }
 
 @media screen and (max-width: 420px) {
-  .rivaldo span{
+  .rivaldo span {
     font-size: 0.8rem;
   }
 
   .overview .title {
     font-size: 1rem;
+    width: 262px;
   }
 }
 
 @media screen and (max-width: 360px) {
-  .rivaldo span{
+  .rivaldo span {
     font-size: 0.7rem;
   }
 
   .overview .title {
     font-size: 0.9rem;
+    width: 245px;
   }
 }

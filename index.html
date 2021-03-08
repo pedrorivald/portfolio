@@ -24,11 +24,20 @@
       rel="stylesheet"
     />
 
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./src/js/scroll.js"></script>
+
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/menu.css" />
     <link rel="stylesheet" href="src/css/home.css" />
     <link rel="stylesheet" href="src/css/overview.css" />
     <link rel="stylesheet" href="src/css/projects.css" />
+    <link rel="stylesheet" href="src/css/scroll.css" />
   </head>
   <body>
     <div id="particles-js"></div>
@@ -63,7 +72,7 @@
         >
       </div>
 
-      <div class="start">
+      <div class="start anime">
         <a href="#overview">
           <button><i class="fab fa-google-play"></i> Start</button>
         </a>
@@ -72,15 +81,17 @@
 
     <div class="overview" id="overview">
       <div class="title">
-        <span class="white">$</span>
-        <span class="magenta">cat</span>
-        <span class="yellow">Rivaldo.json</span>
+        <div class="typing typing-anime" id="typing-overview">
+          <span class="white">$</span>
+          <span class="magenta">cat</span>
+          <span class="yellow">Rivaldo.json</span>
+        </div>
       </div>
 
       <div class="bar"></div>
       <div class="divider-overview"></div>
 
-      <div class="rivaldo">
+      <div class="rivaldo anime">
         <span class="chave-0">{</span>
 
         <span class="line">
@@ -144,15 +155,15 @@
         <span></span
         ><span
           ><div class="title">
-            $
-            <div class="magenta">cd</div>
-            Projetos
+            <div class="typing typing-anime" id="typing-projects">
+              $ <div class="cd magenta">cd</div> Projetos
+            </div>
           </div></span
         ><span></span>
       </div>
 
       <div class="project pizza">
-        <div class="article">
+        <div class="article project-anime">
           <div class="link">
             <a href="https://pizzadelivery.vercel.app" target="_blank"
               ><i class="fas fa-external-link-alt"></i
@@ -180,7 +191,7 @@
             </ul>
           </div>
         </div>
-        <div class="container">
+        <div class="container project-anime">
           <img src="./src/assets/img/pizza.png" />
           <img src="./src/assets/img/pizza.png" />
           <img src="./src/assets/img/pizza.png" />
@@ -192,7 +203,7 @@
       </div>
 
       <div class="project textando">
-        <div class="article">
+        <div class="article project-anime">
           <div class="link">
             <a href="https://pedrorivald.github.io/textando" target="_blank"
               ><i class="fas fa-external-link-alt"></i
@@ -216,7 +227,7 @@
           </div>
         </div>
 
-        <div class="container">
+        <div class="container project-anime">
           <img src="./src/assets/img/textando.png" />
           <img src="./src/assets/img/textando.png" />
           <img src="./src/assets/img/textando.png" />
@@ -228,7 +239,7 @@
       </div>
 
       <div class="project gitdex">
-        <div class="article">
+        <div class="article project-anime">
           <div class="link">
             <a href="https://gitdex.vercel.app" target="_blank"
               ><i class="fas fa-external-link-alt"></i
@@ -254,7 +265,7 @@
             </ul>
           </div>
         </div>
-        <div class="container">
+        <div class="container project-anime">
           <img src="./src/assets/img/gitdex.png" />
           <img src="./src/assets/img/gitdex.png" />
           <img src="./src/assets/img/gitdex.png" />

@@ -48,20 +48,27 @@
   font-weight: bold;
   border-radius: 20px;
   cursor: pointer;
-  color: var(--color-lightWhite);
-  background: var(--background-color);
+  /* color: var(--color-lightWhite); */
+  /* background: var(--background-color); */
   border: 3px solid var(--color-green);
   transition: .5s;
-}
-
-.home .start button:hover {
   background-color: var(--color-green);
   box-shadow: 0 0 40px var(--color-green);
   color: var(--background-color);
 }
 
-.home .start button:hover .fa-google-play {
+.home .start button:hover {
+  background-color: var(--color-magenta);
+  box-shadow: 0 0 40px var(--color-magenta);
+  border: 3px solid var(--color-magenta);
+}
+
+.home .start button .fa-google-play {
   color: var(--color-magenta);
+}
+
+.home .start button:hover .fa-google-play {
+  color: var(--color-green);
 }
 
 .home .start button .fa-google-play {

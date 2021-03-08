@@ -1,0 +1,54 @@
+.scroll .anime {
+	opacity: 0;
+  transform: translateX(-80vw);
+}
+
+.scroll .anime-init {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: 1s all ease;
+}
+
+.scroll .project-anime {
+	opacity: 0;
+}
+
+.scroll .project-init {
+  opacity: 1;
+  transition: 1s all ease;
+}
+
+.scroll .typing-anime {
+  animation: none;
+	visibility: hidden;
+}
+
+.scroll .typing-init {
+	visibility: visible;
+	overflow: hidden;
+  white-space: nowrap;
+  animation: title-typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
+}
+
+.typing {
+  border-right: .15em solid transparent;
+}
+
+@keyframes title-typing {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-lightWhite);
+  }
+}
