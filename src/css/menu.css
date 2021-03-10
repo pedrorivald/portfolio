@@ -20,12 +20,12 @@
   cursor: pointer;
 }
 
-.menu li > i {
+.menu-icon {
   font-size: 1.6rem;
   color: var(--color-green);
 }
 
-.menu li > i:hover {
+.menu-icon-click, .menu-icon:hover {
   color: var(--color-magenta);
 }
   
@@ -40,11 +40,7 @@
   text-decoration: none;
 }
 
-.menu ul li ul li a i {
-  color: var(--color-magenta);
-}
-
-.menu ul li ul {
+.dropdown {
   background-color: var(--background-color);
   box-shadow: var(--color-black) 0px 3px 8px;
   border-radius: 15px;
@@ -69,14 +65,11 @@
 }
 
 .menu ul li ul li:hover a i {
-  color: var(--color-green);
+  color: var(--color-magenta);
 }
 
-.menu ul li:hover > ul,
-.menu ul li:focus-within > ul,
-.menu ul li ul:hover,
-.menu ul li ul:focus {
-   visibility: visible;
-   opacity: 1;
-   display: block;
+.dropdown-click {
+  visibility: visible;
+  opacity: 1;
+  display: block;
 }
