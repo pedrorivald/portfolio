@@ -116,3 +116,7 @@ body::-webkit-scrollbar-thumb:hover {
 .yellow {
   color: var(--color-yellow);
 }
+
+.light-green {
+  color: var(--color-lightGreen);
+}

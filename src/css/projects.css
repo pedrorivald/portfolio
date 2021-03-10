@@ -123,6 +123,10 @@
   box-shadow: 0 0 40px #183268;
 }
 
+.container a {
+  text-decoration: none;
+}
+
 .container img {
   position: absolute;
   width: 100%;
@@ -143,6 +147,12 @@
 .container:hover img:nth-child(1) {
   transform: translate(20px, -20px);
   opacity: .5;
+}
+
+@media screen and (max-width: 1380px) {
+  .project .container {
+    transform: rotate(-30deg) skew(25deg) scale(.65) ;
+  }
 }
 
 @media screen and (max-width: 1240px) {

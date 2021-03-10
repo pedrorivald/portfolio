@@ -23,6 +23,12 @@
   animation: typing 3.5s steps(40, end);
 }
 
+.sub-name {
+  font-weight: 300;
+  font-size: 3rem;
+  font-style: italic;
+}
+
 @keyframes typing {
   from {
     width: 0;
@@ -34,10 +40,6 @@
 
 .home .start {
   background-color: none;
-}
-
-.home .name .tag-symbol {
-  color: var(--color-lightGreen);
 }
 
 .home .start button {
@@ -75,9 +77,23 @@
   font-size: 1.1rem;
 }
 
+@media screen and (max-width: 720px) {
+  .home .name {
+    font-size: 2.8rem;
+  }
+
+  .sub-name {
+    font-size: 2.2rem;
+  }
+}
+
 @media screen and (max-width: 620px) {
   .home .name {
     font-size: 2.5rem;
+  }
+
+  .sub-name {
+    font-size: 1.9rem;
   }
 
   .home .start button {
@@ -91,6 +107,10 @@
     font-size: 2rem;
   }
 
+  .sub-name {
+    font-size: 1.6rem;
+  }
+
   .home .start button {
     padding: 10px 25px 10px 25px;
     font-size: 1.1rem;
@@ -100,6 +120,10 @@
 @media screen and (max-width: 360px) {
   .home .name {
     font-size: 1.7rem;
+  }
+
+  .sub-name {
+    font-size: 1.3rem;
   }
 
   .home .start button {

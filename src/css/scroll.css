@@ -1,3 +1,36 @@
+.navbar {
+  position: fixed;
+  z-index: 10;
+  height: 60px;
+  width: 100%;
+  background: rgba(10, 5, 24, 0.75);
+  transition: all 0.4s;
+}
+
+.name-scroll {
+  position: fixed;
+  top: 15px;
+  left: 20px;
+  background: transparent;
+  z-index: 100;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: all 0.4s;
+}
+
+.name-scroll a {
+  color: var(--color-lightWhite);
+  text-decoration: none;
+}
+
+.name-scroll span {
+  padding: 0px 2px 0px 2px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
 .scroll .anime {
 	opacity: 0;
   transform: translateX(-80vw);
@@ -25,30 +58,18 @@
 
 .scroll .typing-init {
 	visibility: visible;
+  border: none;
 	overflow: hidden;
   white-space: nowrap;
-  animation: title-typing 2s steps(20, end), blink-caret 0.5s step-end infinite;
-}
-
-.typing {
-  border-right: .15em solid transparent;
+  animation: title-typing 2.5s steps(30, end);
 }
 
 @keyframes title-typing {
   from {
+    border-right: .15em solid var(--color-lightWhite);
     width: 0px;
   }
   to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--color-lightWhite);
+    width: 200%;
   }
 }

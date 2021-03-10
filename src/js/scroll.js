@@ -1,18 +1,42 @@
-let root = document.documentElement;
+var root = document.documentElement;
 root.className += " scroll";
+
+var scrollYOld = 0;
+
+const navbar = document.getElementById("navbar");
+const nameScroll = document.getElementById("name-scroll");
+
+window.onscroll = () => {
+  if(scrollYOld == 0) {
+    scrollYOld = window.scrollY;
+  }
+
+  if(!scrollUp(window.scrollY) || !window.scrollY > 0) {
+    navbar.classList.add("hidden");
+    nameScroll.classList.add("hidden");
+  }else {
+    navbar.classList.remove("hidden");
+    nameScroll.classList.remove("hidden");
+  }
+}
+
+function scrollUp(scroll) {
+  if(scroll == 0) {
+    scrollYOld = scroll;
+    return false;
+  }
+
+  if(scroll < scrollYOld) {
+    scrollYOld = scroll;
+    return true;
+  }else {
+    scrollYOld = scroll;
+    return false;
+  }
+}
 
 function boxTop(idBox) {
   return $(idBox).offset().top;
-}
-
-function removeTyping(id) {
-  setTimeout(function(){ 
-    document.getElementById(id).classList.remove('typing');
-  }, 2500);
-}
-
-function addTyping(id) {
-  document.getElementById(id).classList.add('typing');
 }
 
 $(document).ready(function () {
@@ -79,10 +103,8 @@ $(document).ready(function () {
     $target.each(function () {
       if (documentTop > boxTop(this) - offset) {
         $(this).addClass(animationClass);
-        removeTyping('typing-overview');
       } else {
         $(this).removeClass(animationClass);
-        addTyping('typing-overview');
       }
     });
   }
@@ -108,10 +130,34 @@ $(document).ready(function () {
     $target.each(function () {
       if (documentTop > boxTop(this) - offset) {
         $(this).addClass(animationClass);
-        removeTyping('typing-projects');
       } else {
         $(this).removeClass(animationClass);
-        addTyping('typing-projects');
+      }
+    });
+  }
+
+  animeScroll();
+
+  $(document).scroll(function () {
+    setTimeout(function () {
+      animeScroll();
+    }, 150);
+  });
+});
+
+$(document).ready(function () {
+  const $target = $(".about-anime"),
+    animationClass = "about-init",
+    windowHeight = $(window).height(),
+    offset = windowHeight - windowHeight / 4;
+
+  function animeScroll() {
+    const documentTop = $(document).scrollTop();
+    $target.each(function () {
+      if (documentTop > boxTop(this) - offset) {
+        $(this).addClass(animationClass);
+      } else {
+        $(this).removeClass(animationClass);
       }
     });
   }

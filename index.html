@@ -30,17 +30,27 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="./src/js/scroll.js"></script>
-
     <link rel="stylesheet" href="src/css/style.css" />
     <link rel="stylesheet" href="src/css/menu.css" />
     <link rel="stylesheet" href="src/css/home.css" />
     <link rel="stylesheet" href="src/css/overview.css" />
     <link rel="stylesheet" href="src/css/projects.css" />
+    <link rel="stylesheet" href="src/css/about.css" />
     <link rel="stylesheet" href="src/css/scroll.css" />
   </head>
   <body>
     <div id="particles-js"></div>
+
+    <div class="navbar hidden" id="navbar"></div>
+
+    <div class="name-scroll hidden" id="name-scroll">
+      <a href="#home">
+        <span class="light-green">&lt;</span>Pedro Rivaldo<span
+          class="light-green"
+          >/&gt;</span
+        >
+      </a>
+    </div>
 
     <div class="menu">
       <ul>
@@ -48,13 +58,16 @@
           <i class="fas fa-bars menu-icon"></i>
           <ul class="dropdown" aria-label="submenu" id="dropdown">
             <li>
-              <a href="#home"><i class="fas fa-home"></i> Início</a>
+              <a href="#home">Início<i class="fas fa-home"></i></a>
             </li>
             <li>
-              <a href="#overview"><i class="fas fa-user-circle"></i> Rivaldo</a>
+              <a href="#overview">Rivaldo<i class="fas fa-user-circle"></i></a>
             </li>
             <li>
-              <a href="#projects"><i class="fas fa-code"></i> Projetos</a>
+              <a href="#projects">Projetos<i class="fas fa-code"></i></a>
+            </li>
+            <li>
+              <a href="#about">Sobre<i class="fas fa-address-card"></i></a>
             </li>
           </ul>
         </li>
@@ -63,13 +76,13 @@
 
     <div class="home" id="home">
       <div class="name">
-        <span>Olá, me chamo</span>
         <span
-          ><span class="tag-symbol">&lt;</span>Pedro Rivaldo<span
-            class="tag-symbol"
+          ><span class="light-green">&lt;</span>Pedro Rivaldo<span
+            class="light-green"
             >/&gt;</span
-          ></span
-        >
+          >
+        </span>
+        <span class="sub-name">Desenvolvedor FrontEnd</span>
       </div>
 
       <div class="start anime">
@@ -150,13 +163,14 @@
     </div>
 
     <div class="projects" id="projects">
-      <div class="bar"></div>
       <div class="divider">
         <span></span
         ><span
           ><div class="title">
             <div class="typing typing-anime" id="typing-projects">
-              $ <div class="cd magenta">cd</div> Projetos
+              $
+              <div class="cd magenta">cd</div>
+              <div class="yellow">Projetos</div>
             </div>
           </div></span
         ><span></span>
@@ -192,9 +206,11 @@
           </div>
         </div>
         <div class="container project-anime">
-          <img src="./src/assets/img/pizza.png" />
-          <img src="./src/assets/img/pizza.png" />
-          <img src="./src/assets/img/pizza.png" />
+          <a href="https://pizzadelivery.vercel.app" target="_blank">
+            <img src="./src/assets/img/pizza.png" />
+            <img src="./src/assets/img/pizza.png" />
+            <img src="./src/assets/img/pizza.png" />
+          </a>
         </div>
       </div>
 
@@ -228,9 +244,11 @@
         </div>
 
         <div class="container project-anime">
-          <img src="./src/assets/img/textando.png" />
-          <img src="./src/assets/img/textando.png" />
-          <img src="./src/assets/img/textando.png" />
+          <a href="https://pedrorivald.github.io/textando" target="_blank">
+            <img src="./src/assets/img/textando.png" />
+            <img src="./src/assets/img/textando.png" />
+            <img src="./src/assets/img/textando.png" />
+          </a>
         </div>
       </div>
 
@@ -266,15 +284,33 @@
           </div>
         </div>
         <div class="container project-anime">
-          <img src="./src/assets/img/gitdex.png" />
-          <img src="./src/assets/img/gitdex.png" />
-          <img src="./src/assets/img/gitdex.png" />
+          <a href="https://gitdex.vercel.app" target="_blank">
+            <img src="./src/assets/img/gitdex.png" />
+            <img src="./src/assets/img/gitdex.png" />
+            <img src="./src/assets/img/gitdex.png" />
+          </a>
         </div>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="divider">
+        <span></span
+        ><span
+          ><div class="title">
+            <div class="typing typing-anime" id="typing-about">
+              $
+              <div class="cd magenta">cd</div>
+              <div class="yellow">Sobre</div>
+            </div>
+          </div></span
+        ><span></span>
       </div>
     </div>
 
     <script src="src/js/particles.js"></script>
     <script src="src/js/app.js"></script>
+    <script src="./src/js/scroll.js"></script>
     <script src="src/js/events.js"></script>
   </body>
 </html>
