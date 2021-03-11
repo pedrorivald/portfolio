@@ -73,3 +73,33 @@
     width: 200%;
   }
 }
+
+.scroll-up {
+  text-decoration: none;
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: var(--color-green);
+  transition: all 0.3s;
+}
+
+.scroll-up:hover {
+  background-color: var(--color-lightWhite);
+}
+
+.scroll-up:hover i {
+  color: var(--color-green);
+}
+
+.scroll-up i {
+  font-size: 2rem;
+  color: var(--background-color);
+}

@@ -5,18 +5,24 @@ var scrollYOld = 0;
 
 const navbar = document.getElementById("navbar");
 const nameScroll = document.getElementById("name-scroll");
+const screenUp = document.getElementById("scroll-up");
+const menu = document.getElementById("menu");
 
 window.onscroll = () => {
   if(scrollYOld == 0) {
     scrollYOld = window.scrollY;
   }
 
-  if(!scrollUp(window.scrollY) || !window.scrollY > 0) {
+  if(!window.scrollY > 0) {
     navbar.classList.add("hidden");
     nameScroll.classList.add("hidden");
+    screenUp.classList.add("hidden");
+    menu.classList.add("hidden");
   }else {
     navbar.classList.remove("hidden");
     nameScroll.classList.remove("hidden");
+    screenUp.classList.remove("hidden");
+    menu.classList.remove("hidden");
   }
 }
 

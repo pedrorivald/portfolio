@@ -4,6 +4,7 @@
   right: 15px;
   background: transparent;
   z-index: 100;
+  transition: all 0.3s;
 }
 
 .menu ul {
