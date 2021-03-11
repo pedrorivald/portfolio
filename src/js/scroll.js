@@ -7,19 +7,14 @@ const navbar = document.getElementById("navbar");
 const nameScroll = document.getElementById("name-scroll");
 const screenUp = document.getElementById("scroll-up");
 const menu = document.getElementById("menu");
+const overview = document.getElementById("overview");
 
 window.onscroll = () => {
   if(scrollYOld == 0) {
     scrollYOld = window.scrollY;
   }
 
-  if(window.scrollY > 0) {
-    screenUp.classList.remove("hidden");
-    menu.classList.remove("hidden");
-  }else {
-    screenUp.classList.add("hidden");
-    menu.classList.add("hidden");
-  }
+  hidden();
 
   if(!scrollUp(window.scrollY) || !window.scrollY > 0) {
     navbar.classList.add("hidden");
@@ -27,6 +22,18 @@ window.onscroll = () => {
   }else {
     navbar.classList.remove("hidden");
     nameScroll.classList.remove("hidden");
+  }
+}
+
+function hidden() {
+  if(window.scrollY > 0) {
+    screenUp.classList.remove("hidden");
+    menu.classList.remove("hidden");
+    overview.classList.remove("hidden");
+  }else {
+    screenUp.classList.add("hidden");
+    menu.classList.add("hidden");
+    overview.classList.add("hidden");
   }
 }
 
@@ -76,8 +83,8 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  const $target = $(".project-anime"),
-    animationClass = "project-init",
+  const $target = $(".anime-opacity"),
+    animationClass = "init-opacity",
     windowHeight = $(window).height(),
     offset = windowHeight - windowHeight / 4;
 
@@ -110,59 +117,6 @@ $(document).ready(function () {
   function animeScroll() {
     const documentTop = $(document).scrollTop();
 
-    $target.each(function () {
-      if (documentTop > boxTop(this) - offset) {
-        $(this).addClass(animationClass);
-      } else {
-        $(this).removeClass(animationClass);
-      }
-    });
-  }
-
-  animeScroll();
-
-  $(document).scroll(function () {
-    setTimeout(function () {
-      animeScroll();
-    }, 150);
-  });
-});
-
-$(document).ready(function () {
-  const $target = $(".typing-anime"),
-    animationClass = "typing-init",
-    windowHeight = $(window).height(),
-    offset = windowHeight - windowHeight / 4;
-
-  function animeScroll() {
-    const documentTop = $(document).scrollTop();
-
-    $target.each(function () {
-      if (documentTop > boxTop(this) - offset) {
-        $(this).addClass(animationClass);
-      } else {
-        $(this).removeClass(animationClass);
-      }
-    });
-  }
-
-  animeScroll();
-
-  $(document).scroll(function () {
-    setTimeout(function () {
-      animeScroll();
-    }, 150);
-  });
-});
-
-$(document).ready(function () {
-  const $target = $(".about-anime"),
-    animationClass = "about-init",
-    windowHeight = $(window).height(),
-    offset = windowHeight - windowHeight / 4;
-
-  function animeScroll() {
-    const documentTop = $(document).scrollTop();
     $target.each(function () {
       if (documentTop > boxTop(this) - offset) {
         $(this).addClass(animationClass);

@@ -33,7 +33,7 @@
 
 .scroll .anime {
 	opacity: 0;
-  transform: translateX(-80vw);
+  transform: translateX(-100vw);
 }
 
 .scroll .anime-init {
@@ -42,11 +42,11 @@
   transition: 1s all ease;
 }
 
-.scroll .project-anime {
+.scroll .anime-opacity {
 	opacity: 0;
 }
 
-.scroll .project-init {
+.scroll .init-opacity {
   opacity: 1;
   transition: 1s all ease;
 }
