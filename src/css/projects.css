@@ -57,7 +57,7 @@
   font-size: 1.5rem;
   color: var(--color-lightWhite);
   font-weight: bold;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 
 .article {
@@ -89,7 +89,7 @@
 .article .project-description ul li{
   list-style: none;
   color: var(--color-lightWhite);
-  font-weight: bold;
+  font-weight: 400;
   font-size: 1.2rem;
 }
 
@@ -222,7 +222,7 @@
 
   .article {
     transform: scale(0.9) translateY(40%);
-    padding: 15px
+    padding: 20px
   }
 
   .article .project-description ul li {
@@ -256,8 +256,7 @@
   }
 
   .article {
-    transform: scale(0.8) translateY(40%);
-    padding: 12px
+    transform: scale(0.9) translateY(40%);
   }
 
   .article .project-description ul li {
