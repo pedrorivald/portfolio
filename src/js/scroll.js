@@ -13,16 +13,20 @@ window.onscroll = () => {
     scrollYOld = window.scrollY;
   }
 
-  if(!window.scrollY > 0) {
-    navbar.classList.add("hidden");
-    nameScroll.classList.add("hidden");
+  if(window.scrollY > 0) {
+    screenUp.classList.remove("hidden");
+    menu.classList.remove("hidden");
+  }else {
     screenUp.classList.add("hidden");
     menu.classList.add("hidden");
+  }
+
+  if(!scrollUp(window.scrollY) || !window.scrollY > 0) {
+    navbar.classList.add("hidden");
+    nameScroll.classList.add("hidden");
   }else {
     navbar.classList.remove("hidden");
     nameScroll.classList.remove("hidden");
-    screenUp.classList.remove("hidden");
-    menu.classList.remove("hidden");
   }
 }
 
