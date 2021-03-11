@@ -66,6 +66,7 @@ body::-webkit-scrollbar-thumb:hover {
   width: 3px;
   height: 100%;
   background-color: var(--color-green);
+  transition: all 0.3s;
 }
 
 .divider {
@@ -73,6 +74,7 @@ body::-webkit-scrollbar-thumb:hover {
   align-items: center;
   text-align: center;
   width: 75%;
+  transition: all 0.3s;
 }
 
 .divider span {
