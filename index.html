@@ -36,6 +36,7 @@
     <link rel="stylesheet" href="src/css/overview.css" />
     <link rel="stylesheet" href="src/css/projects.css" />
     <link rel="stylesheet" href="src/css/study.css" />
+    <link rel="stylesheet" href="src/css/open-source.css" />
     <link rel="stylesheet" href="src/css/about.css" />
     <link rel="stylesheet" href="src/css/scroll.css" />
   </head>
@@ -73,6 +74,9 @@
             </li>
             <li>
               <a href="#study">Estudos<i class="fas fa-graduation-cap"></i></a>
+            </li>
+            <li>
+              <a href="#open-source">OpenSource<i style="font-weight: bold;" class="fab fa-osi"></i></a>
             </li>
             <li>
               <a href="#about">Sobre<i class="fas fa-address-card"></i></a>
@@ -154,6 +158,37 @@
           ><span class="two-point">:</span>
           <span class="value">"Técnico em Informática"</span
           ><span class="comma">,</span>
+        </span>
+
+        <span class="line">
+          <span class="tab key">"medalhas_olimpíadas"</span
+          ><span class="two-point">:</span>
+          <span class="number">[</span>
+          <span class="value tooltip"
+            >"OBA"<span class="tooltiptext"
+              ><p>Olimpíada Brasileira de Astronomia e Astronáutica</p>
+              <p class="medal-gold">Dois Ouros</p></span
+            ></span
+          ><span class="comma">,</span>
+          <span class="value tooltip"
+            >"ONC"<span class="tooltiptext"
+              ><p>Olimpíada Nacional de Ciências</p>
+              <p class="medal-gold">Ouro</p></span
+            ></span
+          ><span class="comma">,</span>
+          <span class="value tooltip"
+            >"OIMSF"<span class="tooltiptext"
+              ><p>Olimpíada Internacional Matemática Sem Fronteiras</p>
+              <p class="medal-gold">Ouro</p></span
+            ></span
+          ><span class="comma">,</span>
+          <span class="value tooltip"
+            >"TDM"<span class="tooltiptext"
+              ><p>Tubarão de Matemática</p>
+              <p class="medal-silver">Prata</p></span
+            ></span
+          >
+          <span class="number">]</span>
         </span>
 
         <span class="line">
@@ -389,6 +424,62 @@
       </div>
     </div>
 
+    <div class="open-source" id="open-source">
+      <div class="divider anime-opacity">
+        <span></span
+        ><span
+          ><div class="title">
+            <div class="typing typing-anime" id="typing-open-source">
+              $
+              <div class="cd magenta">cd</div>
+              <div class="yellow">Open-Source</div>
+            </div>
+          </div></span
+        ><span></span>
+      </div>
+
+      <div class="open-source-article anime">
+        <div class="open-title">
+          Fogo do Doom 🔥
+        </div>
+        <div class="open-content">
+          <div class="fire">
+            <canvas id="fireCanvas"></canvas>
+            <a
+              class="btn"
+              href="https://pedrorivald.github.io/fire-rgb-canvas"
+              target="_blank"
+              title="Ir para Fogo do Doom RGB"
+            >
+              <div>Ver Projeto <i class="fas fa-external-link-alt"></i></div>
+            </a>
+          </div>
+          <div class="open-description">
+            Fogo do Doom foi um projeto em JavaScript inicialmente implementado
+            por
+            <a
+              href="https://www.youtube.com/channel/UCU5JicSrEM5A63jkJ2QvGYw"
+              target="_blank"
+              title="Ir para Filipe Deschamps"
+              >Filipe Deschamps</a
+            >. Após isso ele publicou um <a
+            href="https://www.youtube.com/watch?v=HCjDjsHPOco"
+            target="_blank"
+            title="Ir para o vídeo"
+            >vídeo</a
+          > sobre as implementações da comunidade,
+              então fiz minha própria <a
+              href="https://github.com/pedrorivald/fire-rgb-canvas"
+              target="_blank"
+              title="Ir para projeto no Github"
+              >versão</a
+            > utilizando <span>Canvas</span> e adicionando
+              a funcionalidade de <span>RGB</span> ao fogo.
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="about" id="about">
       <div class="divider anime-opacity">
         <span></span
@@ -482,6 +573,7 @@
     </div>
 
     <script src="src/js/particles.js"></script>
+    <script src="src/js/fire.js"></script>
     <script src="src/js/app.js"></script>
     <script src="./src/js/scroll.js"></script>
     <script src="src/js/events.js"></script>

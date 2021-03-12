@@ -64,6 +64,22 @@
   color: var(--color-yellow);
 }
 
+.medal-gold {
+  color: var(--color-orange);
+}
+
+.medal-silver {
+  color: var(--color-lightBlack);
+}
+
+.overview .tooltip {
+  text-decoration: underline;
+}
+
+.overview .tooltip:hover {
+  color: var(--color-magenta);
+}
+
 .comma {
   color: var(--color-lightWhite);
 }

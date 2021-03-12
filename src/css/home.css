@@ -50,8 +50,6 @@
   font-weight: bold;
   border-radius: 20px;
   cursor: pointer;
-  /* color: var(--color-lightWhite); */
-  /* background: var(--background-color); */
   border: 3px solid var(--color-green);
   transition: .5s;
   background-color: var(--color-green);

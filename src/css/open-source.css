@@ -1,0 +1,238 @@
+.open-source {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-source .divider {
+  margin-top: 10vh;
+}
+
+.open-source .title {
+  width: 290px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 30px 15px 30px;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: 3px solid var(--color-green);
+  color: var(--color-lightWhite);
+  font-weight: bold;
+}
+
+.open-source .title > div {
+  width: 100%;
+  display: flex;
+}
+
+.open-source .title .cd {
+  padding: 0px 10px 0px 10px;
+}
+
+.open-source-article {
+  margin-top: 12vh;
+  height: 90%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: var(--background-color);
+  border-radius: 40px;
+  transition: .5s;
+}
+
+.open-title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-lightWhite);
+}
+
+.open-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.open-content .fire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fire .btn {
+  text-decoration: none;
+}
+
+.fire .btn div {
+  color: var(--background-color);
+  font-size: 1rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 20px;
+  background: linear-gradient(-90deg, #EE7752, #fcdb23);
+  box-shadow: 0 0 25px #fcc923;
+}
+
+.fire .btn div i {
+  padding-left: 8px;
+}
+
+.fire .btn div:hover {
+  background: linear-gradient(-90deg, #fcdb23, #EE7752);
+}
+
+#fireCanvas {
+  border-radius: 7px;
+  display: block;
+  margin: 25px;
+  width: 240px;
+  image-rendering: pixelated;
+}
+
+.open-description {
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--color-lightWhite);
+}
+
+.open-description a {
+  color: #EE7752;
+}
+
+.open-description a:hover {
+  color: #EE7752;
+}
+
+.open-description span {
+  color: #EE7752;
+}
+
+@media screen and (max-width: 1060px) {
+  .open-description {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .open-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .open-content {
+    flex-direction: column;
+  }
+
+  .open-source-article {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .open-description {
+    padding-top: 30px;
+    width: 75%;
+  }
+
+  .open-title {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .open-source-article {
+    height: 80%;
+    width: 85%;
+    flex-direction: column;
+    align-items: space-around;
+  }
+
+  .open-title {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .open-source .title {
+    font-size: 1.3rem;
+    width: 264px;
+  }
+
+  .open-description {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .open-source .title {
+    font-size: 1.1rem;
+    width: 237px;
+  }
+
+  .open-description {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .open-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .open-source .title {
+    font-size: 1rem;
+    width: 220px;
+  }
+
+  .fire .btn div {
+    font-size: 0.9;
+    padding: 8px;
+  }
+
+  .open-description {
+    font-size: 0.9rem;
+    padding: 5px;
+    padding-top: 25px;
+  }
+
+  #fireCanvas {
+    width: 200px;
+  }
+
+  .open-title {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .open-source .title {
+    font-size: 0.9rem;
+    width: 210px;
+  }
+
+  .open-description {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+
+  .open-title {
+    font-size: 1.3rem;
+  }
+}

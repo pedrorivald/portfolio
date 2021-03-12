@@ -123,3 +123,52 @@ body::-webkit-scrollbar-thumb:hover {
 .light-green {
   color: var(--color-lightGreen);
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: var(--color-lightWhite);
+  color: var(--background-color);
+  text-align: center;
+  border-radius: 6px;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: -150%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 1.3rem;
+}
+
+.tooltip .tooltiptext p {
+  text-align: center;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media screen and (max-width: 920px) {
+  .tooltip .tooltiptext {
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .tooltip .tooltiptext {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .tooltip .tooltiptext {
+    font-size: 0.9rem;
+  }
+}
