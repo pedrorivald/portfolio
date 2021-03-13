@@ -1,4 +1,5 @@
 .open-source {
+  cursor: url(../assets/img/fire.png), default !important;
   overflow: hidden;
   width: 100%;
   margin-top: 15vh;
@@ -44,7 +45,7 @@
   padding: 30px;
   background-color: var(--background-color);
   border-radius: 40px;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .open-title {
@@ -73,6 +74,7 @@
 
 .fire .btn {
   text-decoration: none;
+  cursor: url(../assets/img/fire.png), default !important;
 }
 
 .fire .btn div {
@@ -84,7 +86,7 @@
   justify-content: center;
   padding: 15px;
   border-radius: 20px;
-  background: linear-gradient(-90deg, #EE7752, #fcdb23);
+  background: linear-gradient(-90deg, #ee7752, #fcdb23);
   box-shadow: 0 0 25px #fcc923;
 }
 
@@ -93,7 +95,7 @@
 }
 
 .fire .btn div:hover {
-  background: linear-gradient(-90deg, #fcdb23, #EE7752);
+  background: linear-gradient(-90deg, #fcdb23, #ee7752);
 }
 
 #fireCanvas {
@@ -111,15 +113,16 @@
 }
 
 .open-description a {
-  color: #EE7752;
-}
-
-.open-description a:hover {
-  color: #EE7752;
+  cursor: url(../assets/img/fire.png), default !important;
+  color: #ee7752;
 }
 
 .open-description span {
-  color: #EE7752;
+  color: #ee7752;
+}
+
+.open-description span:hover, .open-description a:hover {
+  color: var(--color-yellow);
 }
 
 @media screen and (max-width: 1060px) {
