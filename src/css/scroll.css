@@ -7,6 +7,10 @@
   transition: all 0.4s;
 }
 
+.transform {
+  transform: translateY(-150%);
+}
+
 .name-scroll {
   position: fixed;
   top: 15px;

@@ -27,11 +27,11 @@ window.onscroll = () => {
   hidden();
 
   if(!scrollUp(window.scrollY) || !window.scrollY > 0) {
-    navbar.classList.add("hidden");
-    nameScroll.classList.add("hidden");
+    navbar.classList.add("transform");
+    nameScroll.classList.add("transform");
   }else {
-    navbar.classList.remove("hidden");
-    nameScroll.classList.remove("hidden");
+    navbar.classList.remove("transform");
+    nameScroll.classList.remove("transform");
   }
 }
 
