@@ -9,6 +9,16 @@ const screenUp = document.getElementById("scroll-up");
 const menu = document.getElementById("menu");
 const overview = document.getElementById("overview");
 
+$('.a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var link = $(this).attr('href'),
+		targetOffset = $(link).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 100
+	}, 500);
+});
+
 window.onscroll = () => {
   if(scrollYOld == 0) {
     scrollYOld = window.scrollY;
