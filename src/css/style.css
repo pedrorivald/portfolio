@@ -28,6 +28,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: var(--color-green) #333333;
 }
 
 body {
