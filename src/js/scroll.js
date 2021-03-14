@@ -114,20 +114,16 @@ $(document).ready(function () {
     $pizza.each(function () {
       if (documentTop > boxTop(this) - offsetPizza) {
         addProgress([0, 2]);
-        removeProgress([3, 5]);
       }
     });
     $textando.each(function () {
       if (documentTop > boxTop(this) - offsetTextando) {
         addProgress([3, 5]);
-        removeProgress([0, 2]);
-        removeProgress([6, 8]);
       }
     });
     $gitdex.each(function () {
       if (documentTop > boxTop(this) - offsetGitdex) {
         addProgress([6, 8]);
-        removeProgress([3, 5]);
       }
     });
     $targetAnime.each(function () {
