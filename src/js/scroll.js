@@ -115,7 +115,6 @@ $(document).ready(function () {
       if (documentTop > boxTop(this) - offsetPizza) {
         addProgress([0, 2]);
         removeProgress([3, 5]);
-        removeProgress([6, 8]);
       }
     });
     $textando.each(function () {
@@ -128,7 +127,6 @@ $(document).ready(function () {
     $gitdex.each(function () {
       if (documentTop > boxTop(this) - offsetGitdex) {
         addProgress([6, 8]);
-        removeProgress([0, 2]);
         removeProgress([3, 5]);
       }
     });
