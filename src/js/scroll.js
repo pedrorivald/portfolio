@@ -44,6 +44,7 @@ function hidden() {
     screenUp.classList.add("hidden");
     menu.classList.add("hidden");
     overview.classList.add("hidden");
+    removeProgress();
   }
 }
 
@@ -66,7 +67,43 @@ function boxTop(idBox) {
   return $(idBox).offset().top;
 }
 
+const progress = document.querySelectorAll('.progress-done');
+
+function addProgress(range = [0, 8]) {
+  for(let i = range[0]; i <= range[1]; i++) {
+    progress[i].style.width = progress[i].getAttribute('data-done') + '%';
+  }
+}
+
+function removeProgress(range = [0, 8]) {
+  for(let i = range[0]; i <= range[1]; i++) {
+    progress[i].style.width = '100%';
+  }
+}
+
 $(document).ready(function () {
+  const $pizza = $(".pizza-progress"),
+    windowHeightPizza = $(window).height(),
+    offsetPizza = windowHeightPizza - windowHeightPizza / 4;
+
+  const $textando = $(".textando-progress"),
+    windowHeightTextando = $(window).height(),
+    offsetTextando = windowHeightTextando - windowHeightTextando / 4;
+
+  const $gitdex = $(".gitdex-progress"),
+    windowHeightGitdex = $(window).height(),
+    offsetGitdex = windowHeightGitdex - windowHeightGitdex / 4;
+
+  const $targetAnime = $(".anime-opacity"),
+    animationClassAnime = "init-opacity",
+    windowHeightAnime = $(window).height(),
+    offsetAnime = windowHeightAnime - windowHeightAnime / 4;
+
+  const $targetTyping = $(".typing-anime"),
+    animationClassTyping = "typing-init",
+    windowHeightTyping = $(window).height(),
+    offsetTyping = windowHeightTyping - windowHeightTyping / 4;
+
   const $target = $(".anime"),
     animationClass = "anime-init",
     windowHeight = $(window).height(),
@@ -74,59 +111,41 @@ $(document).ready(function () {
 
   function animeScroll() {
     const documentTop = $(document).scrollTop();
-    $target.each(function () {
-      if (documentTop > boxTop(this) - offset) {
-        $(this).addClass(animationClass);
-      } else {
-        $(this).removeClass(animationClass);
+    $pizza.each(function () {
+      if (documentTop > boxTop(this) - offsetPizza) {
+        addProgress([0, 2]);
+        removeProgress([3, 5]);
+        removeProgress([6, 8]);
       }
     });
-  }
-
-  animeScroll();
-
-  $(document).scroll(function () {
-    setTimeout(function () {
-      animeScroll();
-    }, 150);
-  });
-});
-
-$(document).ready(function () {
-  const $target = $(".anime-opacity"),
-    animationClass = "init-opacity",
-    windowHeight = $(window).height(),
-    offset = windowHeight - windowHeight / 4;
-
-  function animeScroll() {
-    const documentTop = $(document).scrollTop();
-    $target.each(function () {
-      if (documentTop > boxTop(this) - offset) {
-        $(this).addClass(animationClass);
-      } else {
-        $(this).removeClass(animationClass);
+    $textando.each(function () {
+      if (documentTop > boxTop(this) - offsetTextando) {
+        addProgress([3, 5]);
+        removeProgress([0, 2]);
+        removeProgress([6, 8]);
       }
     });
-  }
-
-  animeScroll();
-
-  $(document).scroll(function () {
-    setTimeout(function () {
-      animeScroll();
-    }, 150);
-  });
-});
-
-$(document).ready(function () {
-  const $target = $(".typing-anime"),
-    animationClass = "typing-init",
-    windowHeight = $(window).height(),
-    offset = windowHeight - windowHeight / 4;
-
-  function animeScroll() {
-    const documentTop = $(document).scrollTop();
-
+    $gitdex.each(function () {
+      if (documentTop > boxTop(this) - offsetGitdex) {
+        addProgress([6, 8]);
+        removeProgress([0, 2]);
+        removeProgress([3, 5]);
+      }
+    });
+    $targetAnime.each(function () {
+      if (documentTop > boxTop(this) - offsetAnime) {
+        $(this).addClass(animationClassAnime);
+      } else {
+        $(this).removeClass(animationClassAnime);
+      }
+    });
+    $targetTyping.each(function () {
+      if (documentTop > boxTop(this) - offsetTyping) {
+        $(this).addClass(animationClassTyping);
+      } else {
+        $(this).removeClass(animationClassTyping);
+      }
+    });
     $target.each(function () {
       if (documentTop > boxTop(this) - offset) {
         $(this).addClass(animationClass);
