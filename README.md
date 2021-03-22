@@ -5,7 +5,7 @@
 ### Executar Projeto:
 
 ~~~bash
-git clone https://github.com/Matan18/Vai-na-sort.git
+git clone https://github.com/pedrorivald/portfolio.git
 ~~~
 
 * > Navegue pelo gerenciador de arquivos até a pasta Vai-na-sort
@@ -16,7 +16,7 @@ git clone https://github.com/Matan18/Vai-na-sort.git
 ## English
 
 ~~~bash
-git clone https://github.com/Matan18/Vai-na-sort.git
+git clone https://github.com/pedrorivald/portfolio.git
 ~~~
 
 ### Run Project
@@ -28,7 +28,7 @@ git clone https://github.com/Matan18/Vai-na-sort.git
 ## Español
 
 ~~~bash
-git clone https://github.com/Matan18/Vai-na-sort.git
+git clone https://github.com/pedrorivald/portfolio.git
 ~~~
 
 ### Ejecutar el proyecto
