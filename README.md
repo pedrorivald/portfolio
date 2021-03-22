@@ -8,7 +8,7 @@
 git clone https://github.com/pedrorivald/portfolio.git
 ~~~
 
-* > Navegue pelo gerenciador de arquivos até a pasta Vai-na-sort
+* > Navegue pelo gerenciador de arquivos até a pasta portfolio
 
 * > Clique duas vezes no arquivo index.html
 
@@ -21,7 +21,7 @@ git clone https://github.com/pedrorivald/portfolio.git
 
 ### Run Project
 
-* > Navigate through the file manager to the Vai-na-sort folder
+* > Navigate through the file manager to the portfolio folder
 
 * > Double-click the index.html file
 
@@ -33,7 +33,7 @@ git clone https://github.com/pedrorivald/portfolio.git
 
 ### Ejecutar el proyecto
 
-* >Navegue a través del administrador de archivos a la carpeta Vai-na-sort
+* >Navegue a través del administrador de archivos a la carpeta portfolio
 
 * > Doble clic en el archivo index.html
 
