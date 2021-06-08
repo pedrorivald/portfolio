@@ -82,6 +82,14 @@ function removeProgress(range = [0, 8]) {
 }
 
 $(document).ready(function () {
+  const $cssStudies = $(".css-studies-progress"),
+    windowHeightCssStudies = $(window).height(),
+    offsetCssStudies = windowHeightCssStudies - windowHeightCssStudies / 4;
+
+  const $wordSearch = $(".word-search-progress"),
+    windowHeightWordSearch = $(window).height(),
+    offsetWordSearch = windowHeightWordSearch - windowHeightWordSearch / 4;
+
   const $pizza = $(".pizza-progress"),
     windowHeightPizza = $(window).height(),
     offsetPizza = windowHeightPizza - windowHeightPizza / 4;
@@ -111,41 +119,29 @@ $(document).ready(function () {
 
   function animeScroll() {
     const documentTop = $(document).scrollTop();
-    $pizza.each(function () {
-      if (documentTop > boxTop(this) - offsetPizza) {
-        addProgress([0, 2]);
-      }
-    });
-    $textando.each(function () {
-      if (documentTop > boxTop(this) - offsetTextando) {
-        addProgress([3, 5]);
-      }
-    });
-    $gitdex.each(function () {
-      if (documentTop > boxTop(this) - offsetGitdex) {
-        addProgress([6, 8]);
-      }
-    });
+    $cssStudies.each(function () { if(documentTop > boxTop(this) - offsetCssStudies) addProgress([0, 2]); });
+
+    $wordSearch.each(function () { if(documentTop > boxTop(this) - offsetWordSearch) addProgress([3, 5]); });
+
+    $pizza.each(function () { if(documentTop > boxTop(this) - offsetPizza) addProgress([6, 8]); });
+
+    $textando.each(function () { if(documentTop > boxTop(this) - offsetTextando) { addProgress([9, 11]); }});
+
+    $gitdex.each(function () { if(documentTop > boxTop(this) - offsetGitdex) { addProgress([12, 14]); }});
+
     $targetAnime.each(function () {
-      if (documentTop > boxTop(this) - offsetAnime) {
-        $(this).addClass(animationClassAnime);
-      } else {
-        $(this).removeClass(animationClassAnime);
-      }
+      if (documentTop > boxTop(this) - offsetAnime) $(this).addClass(animationClassAnime);
+      else $(this).removeClass(animationClassAnime);
     });
+
     $targetTyping.each(function () {
-      if (documentTop > boxTop(this) - offsetTyping) {
-        $(this).addClass(animationClassTyping);
-      } else {
-        $(this).removeClass(animationClassTyping);
-      }
+      if (documentTop > boxTop(this) - offsetTyping) $(this).addClass(animationClassTyping);
+      else $(this).removeClass(animationClassTyping);
     });
+
     $target.each(function () {
-      if (documentTop > boxTop(this) - offset) {
-        $(this).addClass(animationClass);
-      } else {
-        $(this).removeClass(animationClass);
-      }
+      if (documentTop > boxTop(this) - offset) $(this).addClass(animationClass);
+      else $(this).removeClass(animationClass);
     });
   }
 

@@ -78,6 +78,14 @@
   box-shadow: var(--color-yellow) 0px 3px 8px;
 }
 
+.css-studies .article:hover {
+  box-shadow: #b260c7 0px 3px 8px;
+}
+
+.word-search .article:hover {
+  box-shadow: #261153 0px 3px 8px;
+}
+
 .textando .article:hover {
   box-shadow: var(--color-purpleUltraLight) 0px 3px 8px;
 }
@@ -89,6 +97,8 @@
 .pizza .progress-done { background: var(--color-yellow); }
 .textando .progress-done { background: var(--color-purpleUltraLight); }
 .gitdex .progress-done { background: #183268; }
+.css-studies .progress-done { background: #b260c7; }
+.word-search .progress-done { background: #261153; }
 
 .pizza .progress-text .percentage, .pizza .progress-text .percentage i {
   color: var(--color-yellow);
@@ -102,9 +112,19 @@
   color: #355caf;
 }
 
+.css-studies .progress-text .percentage, .css-studies .progress-text .percentage i {
+  color: #b260c7;
+}
+
+.word-search .progress-text .percentage, .word-search .progress-text .percentage i {
+  color: var(--color-lightWhite);
+}
+
 .pizza .progress-text { color: var(--background-color);}
 .textando .progress-text { color: var(--background-color); }
 .gitdex .progress-text { color: var(--color-lightWhite); }
+.css-studies .progress-text { color: var(--color-lightWhite);}
+.word-search .progress-text { color: var(--color-lightWhite);}
 
 .article .project-name .number {
   color: var(--color-green);
@@ -126,6 +146,16 @@
   transition: 0.5s;
   border-radius: 15px;
   cursor: pointer;
+}
+
+.css-studies .container {
+  background: #b260c7;
+  box-shadow: 0 0 40px #b260c7;
+}
+
+.word-search .container {
+  background: #261153;
+  box-shadow: 0 0 40px #261153;
 }
 
 .pizza .container {
