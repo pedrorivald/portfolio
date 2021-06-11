@@ -1,0 +1,177 @@
+.camp {
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  margin-top: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.camp .title {
+  width: 275px;
+  display: flex;
+  justify-content: flex-start;
+  padding: 15px 30px 15px 30px;
+  background-color: var(--background-color);
+  border-radius: 20px;
+  font-size: 1.5rem;
+  border: 3px solid var(--color-green);
+  color: var(--color-lightWhite);
+  font-weight: bold;
+}
+
+.camp .title > div {
+  width: 100%;
+  display: flex;
+}
+
+.camp .title .cd {
+  padding: 0px 10px 0px 10px;
+}
+
+.camp-article {
+  height: 60%;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: var(--background-color);
+  border-radius: 40px;
+  transition: .5s;
+}
+
+.camp-contact {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.camp-contact .img {
+  width: 50%;
+}
+
+.camp-contact img {
+  width: 100%;
+}
+
+.camp-text {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.camp-text .text {
+  color: var(--color-lightWhite);
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.camp-text .text span {
+  color: var(--color-orange);
+}
+
+.camp-text .text span:hover {
+  color: var(--color-yellow);
+}
+
+.camp-text .text .btn {
+  color: inherit;
+}
+
+@media screen and (max-width: 1000px) {
+  .camp-text .text {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .camp-article {
+    height: 80%;
+    width: 85%;
+    flex-direction: column;
+    align-items: space-around;
+  }
+
+  .camp-contact {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .camp-contact .img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .camp-contact img {
+    width: 60%;
+  }
+
+  .camp-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .camp .title {
+    font-size: 1.3rem;
+    width: 250px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .camp .title {
+    font-size: 1.1rem;
+    width: 225px;
+  }
+
+  .camp-text {
+    padding: 5px 20px 20px 20px;
+  }
+
+  .camp-text .text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .camp-text .text {
+    font-size: 0.9rem;
+  }
+
+  .camp-contact .img {
+    width: 75%;
+  }
+
+  .camp-text {
+    padding: 20px 10px 20px 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .camp .title {
+    font-size: 1rem;
+    width: 210px;
+  }
+
+  .camp-contact .img {
+    width: 85%;
+  }
+
+  .camp-text .text {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .camp .title {
+    font-size: 0.9rem;
+    width: 200px;
+  }
+}
