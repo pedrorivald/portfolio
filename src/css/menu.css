@@ -72,6 +72,10 @@
   color: var(--color-magenta);
 }
 
+.menu ul li ul li a:hover {
+  color: var(--color-magenta);
+}
+
 .dropdown-click {
   visibility: visible;
   opacity: 1;
