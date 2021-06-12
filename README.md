@@ -1,41 +1,15 @@
 # 1ª Competição de Projetos: Portfólio Criativo
 
-## Equipe: Vai na Sort
+Acessar: [https://pedrorivaldo.me](https://www.pedrorivaldo.me)
 
-### Executar Projeto:
+Este portfólio foi o projeto vencedor da Competição de Projetos: Portfólio Criativo da comunidade Ballerini, fundada pela [Rafaella Ballerini](https://github.com/rafaballerini).
 
-~~~bash
-git clone https://github.com/pedrorivald/portfolio.git
-~~~
+Minha equipe se chamava Vai-na-sort e também era integrada pelo [Felippe Butland](https://github.com/felippebutland). 
 
-* > Navegue pelo gerenciador de arquivos até a pasta portfolio
+O portfólio foi desenvolvido durante uma semana e ao final foi avaliado pelos jurados: [Mayk Brito](https://github.com/maykbrito), [Maiatto](https://github.com/rafaelmaiach) e [Attekita](https://github.com/Bullas) com o resultado divulgado ao vivo no youtube.
 
-* > Clique duas vezes no arquivo index.html
+![Inicio](./src/assets/github/home.png)
 
+![Projetos](./src/assets/github/projects.png)
 
-## English
-
-~~~bash
-git clone https://github.com/pedrorivald/portfolio.git
-~~~
-
-### Run Project
-
-* > Navigate through the file manager to the portfolio folder
-
-* > Double-click the index.html file
-
-## Español
-
-~~~bash
-git clone https://github.com/pedrorivald/portfolio.git
-~~~
-
-### Ejecutar el proyecto
-
-* >Navegue a través del administrador de archivos a la carpeta portfolio
-
-* > Doble clic en el archivo index.html
-
-[<img src="https://avatars2.githubusercontent.com/u/61600036?s=150&u=3ac690ed826fc73ec79c08d70e8c77e0efdc5d5b&v=4"><br><sub>@pedrorivald</sub>](https://github.com/pedrorivald) | [<img src="https://avatars.githubusercontent.com/u/60993604?s=400&u=ea492809c2203db620ffa209384f301eded357a9&v=4"><br><sub>@felippebutland</sub>](https://github.com/felippebutland)
-| :---: | :---: |
+![Mobile](./src/assets/github/mobile-camp.png)
