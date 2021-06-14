@@ -186,21 +186,3 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   justify-content: space-between;
 }
-
-@media screen and (max-width: 920px) {
-  .tooltip .tooltiptext {
-    left: 0%;
-  }
-}
-
-@media screen and (max-width: 620px) {
-  .tooltip .tooltiptext {
-    font-size: 1rem;
-  }
-}
-
-@media screen and (max-width: 420px) {
-  .tooltip .tooltiptext {
-    font-size: 0.9rem;
-  }
-}

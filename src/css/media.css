@@ -1,0 +1,179 @@
+@media screen and (max-width: 1380px) {
+  .project .container { transform: rotate(-30deg) skew(25deg) scale(.65) ; }
+}
+
+@media screen and (max-width: 1240px) {
+  .project .container { transform: rotate(-30deg) skew(25deg) scale(.52); }
+  .article { transform: scale(0.9); }
+}
+
+@media screen and (max-width: 1065px) {
+  .project .container { transform: rotate(-30deg) skew(25deg) scale(.47); }
+  .article { transform: scale(0.8); }
+}
+
+@media screen and (max-width: 1060px) {
+  .open-description { font-size: 1.2rem; }
+}
+
+@media screen and (max-width: 1000px) {
+  .contacts { width: 100%; }
+  .contacts .contact a { font-size: 1.8rem; }
+  .contacts .contact a svg { width: 1.8rem; height: 1.8rem; }
+  .about-text .text, .open-description, .facul-text .text, .camp-text .text { font-size: 1.1rem; }
+  .projects .project {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project .container { transform: rotate(-30deg) skew(25deg) scale(.75) translateX(-5%) translateY(5%); }
+  .article {
+    transform: scale(1) translateY(25%);
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .open-content { flex-direction: column; }
+  .open-source-article, .study-article  {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .open-description { padding-top: 30px; width: 75%; }
+  .open-title { font-size: 1.9rem; }
+  .study-article .tech { width: 90%; }
+  .study-article .tech-border:last-child {
+    border-left: none;
+    border-top: 2px solid var(--color-magenta);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .tooltip .tooltiptext { left: 0%; }
+}
+
+@media screen and (max-width: 820px) {
+  .about-article, .camp-article, .open-source-article, .study-article, .facul-article {
+    height: 80%;
+    width: 85%;
+    flex-direction: column;
+    align-items: space-around;
+  }
+  .about-contact, .camp-contact, .facul-contact  { width: 100%; padding: 10px; }
+  .about-contact .img, .camp-contact .img { display: flex; justify-content: center; }
+  .camp-contact img, .facul-contact img, .about-contact img  { width: 60%; }
+  .camp-text, .facul-text, .about-text { width: 100%; }
+  .facul-contact .img { display: flex; justify-content: center; }
+  .open-title { font-size: 1.7rem; }
+  .rivaldo span { font-size: 1.2rem; }
+  .tech-logo { font-size: 7rem; }
+}
+
+@media screen and (max-width: 720px) {
+  .about .title, .camp .title, .facul .title, .open-source .title, 
+  .overview .title, .projects .title, .study .title { font-size: 1.3rem; }
+  .about .title { width: 190px; }
+  .camp .title { width: 250px; }
+  .facul .title { width: 240px; }
+  .home .name { font-size: 2.8rem; }
+  .sub-name { font-size: 2.2rem; }
+  .open-source .title { width: 264px; }
+  .open-description { width: 85%; }
+  .rivaldo span { font-size: 1rem; }
+  .overview .title { width: 315px; }
+  .projects .title { width: 225px; }
+  .project .container { transform: rotate(-30deg) skew(25deg) scale(.65) translateX(-5%) translateY(5%); }
+  .study .title { width: 210px; }
+  .tech-logo { font-size: 6rem; }
+}
+
+@media screen and (max-width: 620px) {
+  .about .title, .camp .title, .facul .title, .open-source .title, 
+  .overview .title, .projects .title, .study .title { font-size: 1.1rem; }
+  .about .title { width: 170px; }
+  .about-text, .camp-text, .facul-text { padding: 5px 20px 20px 20px; }
+  .contacts .contact a { font-size: 1.6rem; }
+  .about-text .text, .camp-text .text, .facul-text .text, .open-description, .tooltip .tooltiptext { font-size: 1rem; }
+  .camp .title { width: 225px; }
+  .facul .title { width: 215px; }
+  .home .name { font-size: 2.5rem; }
+  .sub-name { font-size: 1.9rem; }
+  .home .start button { padding: 12px 30px 12px 30px; font-size: 1.3rem; }
+  .open-source .title { width: 237px; }
+  .open-description { width: 100%; }
+  .open-title { font-size: 1.5rem; }
+  .rivaldo span { font-size: 0.9rem; }
+  .overview .title { width: 280px; }
+  .projects .title { width: 200px; }
+  .project .container { transform: rotate(-30deg) skew(25deg) scale(.55) translateX(-5%) translateY(3%); }
+  .study .title { width: 190px; }
+  .tech-description { font-size: 1.2rem; }
+  .study-article .tech { width: 95%; padding: 20px 0px 20px 0px; }
+  .tech-logo { font-size: 5rem; }
+}
+
+@media screen and (max-width: 520px) {
+  .contacts .contact a { font-size: 1.4rem; }
+  .about-text, .camp-text, .facul-text { padding: 20px 10px 20px 10px; }
+  .camp-text .text, .facul-text .text, .about-text .text { font-size: 0.9rem; }
+  .camp-contact .img, .facul-contact .img, .about-contact .img  { width: 75%; }
+  .project .container { transform: scale(.75) translateY(5%); }
+  .article { transform: scale(0.9) translateY(25%); padding: 20px; }
+  .article .project-description ul li { font-size: 1rem; }
+  .container:hover { transform: scale(.75) translateY(5%) translateX(-5%); }
+  .container:hover img:nth-child(3) { transform: translate(45px, -45px); opacity: 1; }
+  .container:hover img:nth-child(2) { transform: translate(30px, -30px); opacity: .75; }
+  .container:hover img:nth-child(1) { transform: translate(15px, -15px); opacity: .5; }
+}
+
+@media screen and (max-width: 420px) {
+  .about .title, .camp .title, .facul .title, .open-source .title, 
+  .overview .title, .projects .title, .study .title { font-size: 1rem; }
+  .about .title { width: 165px; }
+  .contacts .contact a { font-size: 1.3rem; }
+  .about-contact .img, .camp-contact .img, .facul-contact .img { width: 85%; }
+  .about-text .text, .camp-text .text, .facul-text .text { font-size: 0.8rem; }
+  .camp .title { width: 210px; }
+  .facul .title { width: 200px; }
+  .home .name { font-size: 2rem; }
+  .sub-name { font-size: 1.6rem; }
+  .home .start button { padding: 10px 25px 10px 25px; font-size: 1.1rem; }
+  .open-source .title { width: 220px; }
+  .fire .btn div { font-size: 0.9; padding: 8px; }
+  .open-description {
+    font-size: 0.9rem;
+    padding: 5px;
+    padding-top: 25px;
+  }
+  #fireCanvas { width: 200px; }
+  .open-title { font-size: 1.4rem; }
+  .rivaldo span { font-size: 0.8rem; }
+  .overview .title { width: 262px; }
+  .projects .title { width: 192px; }
+  .article { transform: scale(0.9) translateY(20%); }
+  .article .project-description ul li { font-size: 1rem; }
+  .tech-description { font-size: 1.1rem; padding: 15px 0px 15px 0px; }
+  .study .title { width: 184px; }
+  .study-article .tech { width: 100%; padding: 20px 0px 20px 0px; }
+  .tooltip .tooltiptext { font-size: 0.9rem; }
+}
+
+@media screen and (max-width: 360px) {
+  .about .title, .camp .title, .facul .title, .open-source .title,
+  .overview .title, .projects .title, .study .title { font-size: 0.9rem; }
+  .about .title { width: 155px; }
+  .camp .title { width: 200px; }
+  .facul .title { width: 190px; }
+  .home .name { font-size: 1.7rem; }
+  .sub-name { font-size: 1.3rem; }
+  .home .start button { padding: 8px 21px 8px 21px; font-size: 1rem; }
+  .open-source .title { width: 210px; }
+  .open-description { font-size: 0.8rem; text-align: center; }
+  .open-title { font-size: 1.3rem; }
+  .rivaldo span { font-size: 0.7rem; }
+  .overview .title { width: 245px; }
+  .projects .title { width: 180px; }
+  .study .title { width: 175px; }
+}
