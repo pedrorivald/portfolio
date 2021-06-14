@@ -9,16 +9,6 @@ const screenUp = document.getElementById("scroll-up");
 const menu = document.getElementById("menu");
 const overview = document.getElementById("overview");
 
-$('.a[href^="#"]').on('click', function(e) {
-	e.preventDefault();
-	var link = $(this).attr('href'),
-		targetOffset = $(link).offset().top;
-			
-	$('html, body').animate({ 
-		scrollTop: targetOffset - 100
-	}, 500);
-});
-
 window.onscroll = () => {
   if(scrollYOld == 0) {
     scrollYOld = window.scrollY;
@@ -44,7 +34,6 @@ function hidden() {
     screenUp.classList.add("hidden");
     menu.classList.add("hidden");
     overview.classList.add("hidden");
-    removeProgress();
   }
 }
 
@@ -62,94 +51,3 @@ function scrollUp(scroll) {
     return false;
   }
 }
-
-function boxTop(idBox) {
-  return $(idBox).offset().top;
-}
-
-const progress = document.querySelectorAll('.progress-done');
-
-function addProgress(range = [0, 8]) {
-  for(let i = range[0]; i <= range[1]; i++) {
-    progress[i].style.width = progress[i].getAttribute('data-done') + '%';
-  }
-}
-
-function removeProgress(range = [0, 8]) {
-  for(let i = range[0]; i <= range[1]; i++) {
-    progress[i].style.width = '100%';
-  }
-}
-
-$(document).ready(function () {
-  const $cssStudies = $(".css-studies-progress"),
-    windowHeightCssStudies = $(window).height(),
-    offsetCssStudies = windowHeightCssStudies - windowHeightCssStudies / 4;
-
-  const $wordSearch = $(".word-search-progress"),
-    windowHeightWordSearch = $(window).height(),
-    offsetWordSearch = windowHeightWordSearch - windowHeightWordSearch / 4;
-
-  const $pizza = $(".pizza-progress"),
-    windowHeightPizza = $(window).height(),
-    offsetPizza = windowHeightPizza - windowHeightPizza / 4;
-
-  const $textando = $(".textando-progress"),
-    windowHeightTextando = $(window).height(),
-    offsetTextando = windowHeightTextando - windowHeightTextando / 4;
-
-  const $gitdex = $(".gitdex-progress"),
-    windowHeightGitdex = $(window).height(),
-    offsetGitdex = windowHeightGitdex - windowHeightGitdex / 4;
-
-  const $targetAnime = $(".anime-opacity"),
-    animationClassAnime = "init-opacity",
-    windowHeightAnime = $(window).height(),
-    offsetAnime = windowHeightAnime - windowHeightAnime / 4;
-
-  const $targetTyping = $(".typing-anime"),
-    animationClassTyping = "typing-init",
-    windowHeightTyping = $(window).height(),
-    offsetTyping = windowHeightTyping - windowHeightTyping / 4;
-
-  const $target = $(".anime"),
-    animationClass = "anime-init",
-    windowHeight = $(window).height(),
-    offset = windowHeight - windowHeight / 4;
-
-  function animeScroll() {
-    const documentTop = $(document).scrollTop();
-    $cssStudies.each(function () { if(documentTop > boxTop(this) - offsetCssStudies) addProgress([0, 2]); });
-
-    $wordSearch.each(function () { if(documentTop > boxTop(this) - offsetWordSearch) addProgress([3, 5]); });
-
-    $pizza.each(function () { if(documentTop > boxTop(this) - offsetPizza) addProgress([6, 8]); });
-
-    $textando.each(function () { if(documentTop > boxTop(this) - offsetTextando) { addProgress([9, 11]); }});
-
-    $gitdex.each(function () { if(documentTop > boxTop(this) - offsetGitdex) { addProgress([12, 14]); }});
-
-    $targetAnime.each(function () {
-      if (documentTop > boxTop(this) - offsetAnime) $(this).addClass(animationClassAnime);
-      else $(this).removeClass(animationClassAnime);
-    });
-
-    $targetTyping.each(function () {
-      if (documentTop > boxTop(this) - offsetTyping) $(this).addClass(animationClassTyping);
-      else $(this).removeClass(animationClassTyping);
-    });
-
-    $target.each(function () {
-      if (documentTop > boxTop(this) - offset) $(this).addClass(animationClass);
-      else $(this).removeClass(animationClass);
-    });
-  }
-
-  animeScroll();
-
-  $(document).scroll(function () {
-    setTimeout(function () {
-      animeScroll();
-    }, 150);
-  });
-});

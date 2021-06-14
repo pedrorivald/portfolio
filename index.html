@@ -45,7 +45,7 @@
       rel="stylesheet"
     />
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
     <link preload rel="stylesheet" href="src/css/style.css" />
     <link preload rel="stylesheet" href="src/css/menu.css" />
@@ -951,5 +951,10 @@
     <script src="src/js/app.js"></script>
     <script src="./src/js/scroll.js"></script>
     <script src="src/js/events.js"></script>
+    <script>
+      ScrollOut({
+        targets: ".css-studies-progress,.word-search-progress,.pizza-progress,.textando-progress,.gitdex-progress,.anime-opacity,.typing-anime,.anime,.progress-done"
+      });
+    </script>
   </body>
 </html>
